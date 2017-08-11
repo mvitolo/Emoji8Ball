@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 @import Firebase;
+#import <Fabric/Fabric.h>
+#import <Crashlytics/Crashlytics.h>
 
 @interface AppDelegate ()
 
@@ -19,6 +21,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [FIRApp configure];
+    [Fabric with:@[[Crashlytics class]]];
     // Initialize the Google Mobile Ads SDK.
     [GADMobileAds configureWithApplicationID:@"ca-app-pub-3058866967373393~1314838258"];
     
