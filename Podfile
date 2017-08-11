@@ -3,7 +3,9 @@ platform :ios, '7.1'
 use_frameworks!
 
 target 'Emoji8Ball' do
-  pod 'DHSmartScreenshot', '~> 1.3.1'
-  pod 'FBSDKCoreKit', '~> 4.1.0'
+
+    pod 'Firebase/Core'
+    pod 'Firebase/AdMob'
+
 end
 

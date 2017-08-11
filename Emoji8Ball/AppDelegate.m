@@ -3,10 +3,11 @@
 //  Emoji8Ball
 //
 //  Created by Matteo Vitolo on 15/05/15.
-//  Copyright (c) 2015 Funambol. All rights reserved.
+//  Copyright (c) 2015 . All rights reserved.
 //
 
 #import "AppDelegate.h"
+@import Firebase;
 
 @interface AppDelegate ()
 
@@ -17,6 +18,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [FIRApp configure];
+    // Initialize the Google Mobile Ads SDK.
+    [GADMobileAds configureWithApplicationID:@"ca-app-pub-3058866967373393~1314838258"];
+    
     return YES;
 }
 
