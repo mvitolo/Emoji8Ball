@@ -27,6 +27,7 @@ PODS:
 DEPENDENCIES:
   - Firebase/AdMob
   - Firebase/Core
+  - Google-Mobile-Ads-SDK
 
 SPEC CHECKSUMS:
   Firebase: 1492bf04e1b73a7353b4fb2cf5a20bac9692f341
@@ -37,6 +38,6 @@ SPEC CHECKSUMS:
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
 
-PODFILE CHECKSUM: 7eb0fe89a5b3d28d25aa67b66d8cdff9f696c8ed
+PODFILE CHECKSUM: 2313edea7200c6022ace1ac8709e7680fda4a81f
 
 COCOAPODS: 1.2.1

@@ -8,8 +8,10 @@
 
 #import "ViewController.h"
 #import "8BallAnswer.h"
+@import GoogleMobileAds;
 
-@interface ViewController ()
+@interface ViewController () <GADBannerViewDelegate>
+@property(nonatomic, strong) GADBannerView *bannerView;
 
 @end
 
@@ -20,6 +22,16 @@
     // Do any additional setup after loading the view, typically from a nib.
     [self.labelContainer setAlpha:0];
     [self.shareButton setHidden:YES];
+    
+    self.bannerView = [[GADBannerView alloc]
+                       initWithAdSize:kGADAdSizeBanner];
+    self.bannerView.delegate = self;
+
+    [self.view addSubview:self.bannerView];
+    self.bannerView.adUnitID = @"ca-app-pub-3058866967373393/2894501473";
+    self.bannerView.rootViewController = self;
+    [self.bannerView loadRequest:[GADRequest request]];
+    
 
 }
 
@@ -99,6 +111,38 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)adViewDidReceiveAd:(GADBannerView *)adView {
+    NSLog(@"adViewDidReceiveAd");
+}
+
+/// Tells the delegate an ad request failed.
+- (void)adView:(GADBannerView *)adView
+didFailToReceiveAdWithError:(GADRequestError *)error {
+    NSLog(@"adView:didFailToReceiveAdWithError: %@", [error localizedDescription]);
+}
+
+/// Tells the delegate that a full screen view will be presented in response
+/// to the user clicking on an ad.
+- (void)adViewWillPresentScreen:(GADBannerView *)adView {
+    NSLog(@"adViewWillPresentScreen");
+}
+
+/// Tells the delegate that the full screen view will be dismissed.
+- (void)adViewWillDismissScreen:(GADBannerView *)adView {
+    NSLog(@"adViewWillDismissScreen");
+}
+
+/// Tells the delegate that the full screen view has been dismissed.
+- (void)adViewDidDismissScreen:(GADBannerView *)adView {
+    NSLog(@"adViewDidDismissScreen");
+}
+
+/// Tells the delegate that a user click will open another app (such as
+/// the App Store), backgrounding the current app.
+- (void)adViewWillLeaveApplication:(GADBannerView *)adView {
+    NSLog(@"adViewWillLeaveApplication");
 }
 
 @end

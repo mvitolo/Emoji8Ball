@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B8CEF7AD3895E3A04688C2E /* Pods_E8Ball.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4556AAA379C57CCE2EA4795 /* Pods_E8Ball.framework */; };
 		AB1742CF1F3E01EC00F8325F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AB1742CE1F3E01EC00F8325F /* GoogleService-Info.plist */; };
 		AB2B1B3C1B0642A90038ACF9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2B1B3B1B0642A90038ACF9 /* main.m */; };
 		AB2B1B3F1B0642A90038ACF9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2B1B3E1B0642A90038ACF9 /* AppDelegate.m */; };
@@ -910,7 +911,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06EAEB9C4F8FA2B31806E78B /* Pods-E8Ball.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E8Ball.release.xcconfig"; path = "Pods/Target Support Files/Pods-E8Ball/Pods-E8Ball.release.xcconfig"; sourceTree = "<group>"; };
 		1004250EE12F9EC423D6FCFC /* Pods-Emoji8Ball.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Emoji8Ball.release.xcconfig"; path = "Pods/Target Support Files/Pods-Emoji8Ball/Pods-Emoji8Ball.release.xcconfig"; sourceTree = "<group>"; };
+		16FC246838FA839D7B09D040 /* Pods-E8Ball.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E8Ball.debug.xcconfig"; path = "Pods/Target Support Files/Pods-E8Ball/Pods-E8Ball.debug.xcconfig"; sourceTree = "<group>"; };
 		84B4586FF00B75D27C8AF165 /* Pods-Emoji8Ball.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Emoji8Ball.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Emoji8Ball/Pods-Emoji8Ball.debug.xcconfig"; sourceTree = "<group>"; };
 		AB1742CE1F3E01EC00F8325F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		AB2B1B361B0642A90038ACF9 /* E8Ball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = E8Ball.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1808,6 +1811,7 @@
 		AB4A88111B076DC400F04D3A /* label@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "label@2x.png"; sourceTree = "<group>"; };
 		AB4A88121B076DC400F04D3A /* label@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "label@3x.png"; sourceTree = "<group>"; };
 		AB733EFD1B07B4EB00CF3E7F /* emojic8ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = emojic8ball.png; sourceTree = "<group>"; };
+		C4556AAA379C57CCE2EA4795 /* Pods_E8Ball.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_E8Ball.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBA97F50D33D667DD593E4B4 /* Pods_Emoji8Ball.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Emoji8Ball.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -1817,6 +1821,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3B4B49794CA4463B57DFDF6 /* Pods_Emoji8Ball.framework in Frameworks */,
+				9B8CEF7AD3895E3A04688C2E /* Pods_E8Ball.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1835,6 +1840,8 @@
 			children = (
 				84B4586FF00B75D27C8AF165 /* Pods-Emoji8Ball.debug.xcconfig */,
 				1004250EE12F9EC423D6FCFC /* Pods-Emoji8Ball.release.xcconfig */,
+				16FC246838FA839D7B09D040 /* Pods-E8Ball.debug.xcconfig */,
+				06EAEB9C4F8FA2B31806E78B /* Pods-E8Ball.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -1843,6 +1850,7 @@
 			isa = PBXGroup;
 			children = (
 				EBA97F50D33D667DD593E4B4 /* Pods_Emoji8Ball.framework */,
+				C4556AAA379C57CCE2EA4795 /* Pods_E8Ball.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -3824,7 +3832,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Emoji8Ball/Pods-Emoji8Ball-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-E8Ball/Pods-E8Ball-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8F4C808A3E149E0E5B058BE5 /* [CP] Embed Pods Frameworks */ = {
@@ -3839,7 +3847,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Emoji8Ball/Pods-Emoji8Ball-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-E8Ball/Pods-E8Ball-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -3978,7 +3986,7 @@
 		};
 		AB2B1B5A1B0642A90038ACF9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 84B4586FF00B75D27C8AF165 /* Pods-Emoji8Ball.debug.xcconfig */;
+			baseConfigurationReference = 16FC246838FA839D7B09D040 /* Pods-E8Ball.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
@@ -3994,7 +4002,7 @@
 		};
 		AB2B1B5B1B0642A90038ACF9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1004250EE12F9EC423D6FCFC /* Pods-Emoji8Ball.release.xcconfig */;
+			baseConfigurationReference = 06EAEB9C4F8FA2B31806E78B /* Pods-E8Ball.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";

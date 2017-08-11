@@ -2,10 +2,10 @@
 platform :ios, '7.1'
 use_frameworks!
 
-target 'Emoji8Ball' do
+target 'E8Ball' do
 
     pod 'Firebase/Core'
     pod 'Firebase/AdMob'
-
+    pod 'Google-Mobile-Ads-SDK'
 end
 
