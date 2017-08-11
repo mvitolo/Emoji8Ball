@@ -913,7 +913,7 @@
 		1004250EE12F9EC423D6FCFC /* Pods-Emoji8Ball.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Emoji8Ball.release.xcconfig"; path = "Pods/Target Support Files/Pods-Emoji8Ball/Pods-Emoji8Ball.release.xcconfig"; sourceTree = "<group>"; };
 		84B4586FF00B75D27C8AF165 /* Pods-Emoji8Ball.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Emoji8Ball.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Emoji8Ball/Pods-Emoji8Ball.debug.xcconfig"; sourceTree = "<group>"; };
 		AB1742CE1F3E01EC00F8325F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
-		AB2B1B361B0642A90038ACF9 /* Emoji8Ball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Emoji8Ball.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB2B1B361B0642A90038ACF9 /* E8Ball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = E8Ball.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB2B1B3A1B0642A90038ACF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB2B1B3B1B0642A90038ACF9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AB2B1B3D1B0642A90038ACF9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -1861,7 +1861,7 @@
 		AB2B1B371B0642A90038ACF9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AB2B1B361B0642A90038ACF9 /* Emoji8Ball.app */,
+				AB2B1B361B0642A90038ACF9 /* E8Ball.app */,
 				AB2B1B4F1B0642A90038ACF9 /* Emoji8BallTests.xctest */,
 			);
 			name = Products;
@@ -2818,9 +2818,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AB2B1B351B0642A90038ACF9 /* Emoji8Ball */ = {
+		AB2B1B351B0642A90038ACF9 /* E8Ball */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AB2B1B591B0642A90038ACF9 /* Build configuration list for PBXNativeTarget "Emoji8Ball" */;
+			buildConfigurationList = AB2B1B591B0642A90038ACF9 /* Build configuration list for PBXNativeTarget "E8Ball" */;
 			buildPhases = (
 				44D32D5E298967CCAF4350DF /* [CP] Check Pods Manifest.lock */,
 				AB2B1B321B0642A90038ACF9 /* Sources */,
@@ -2833,9 +2833,9 @@
 			);
 			dependencies = (
 			);
-			name = Emoji8Ball;
+			name = E8Ball;
 			productName = Emoji8Ball;
-			productReference = AB2B1B361B0642A90038ACF9 /* Emoji8Ball.app */;
+			productReference = AB2B1B361B0642A90038ACF9 /* E8Ball.app */;
 			productType = "com.apple.product-type.application";
 		};
 		AB2B1B4E1B0642A90038ACF9 /* Emoji8BallTests */ = {
@@ -2887,7 +2887,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AB2B1B351B0642A90038ACF9 /* Emoji8Ball */,
+				AB2B1B351B0642A90038ACF9 /* E8Ball */,
 				AB2B1B4E1B0642A90038ACF9 /* Emoji8BallTests */,
 			);
 		};
@@ -3867,7 +3867,7 @@
 /* Begin PBXTargetDependency section */
 		AB2B1B511B0642A90038ACF9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AB2B1B351B0642A90038ACF9 /* Emoji8Ball */;
+			target = AB2B1B351B0642A90038ACF9 /* E8Ball */;
 			targetProxy = AB2B1B501B0642A90038ACF9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -4044,7 +4044,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AB2B1B591B0642A90038ACF9 /* Build configuration list for PBXNativeTarget "Emoji8Ball" */ = {
+		AB2B1B591B0642A90038ACF9 /* Build configuration list for PBXNativeTarget "E8Ball" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AB2B1B5A1B0642A90038ACF9 /* Debug */,
