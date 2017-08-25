@@ -8,6 +8,9 @@
 
 #import "ViewController.h"
 #import "8BallAnswer.h"
+#import "SDScreenshotCapture.h"
+#import <FBSDKShareKit/FBSDKShareKit.h>
+
 @import GoogleMobileAds;
 
 @interface ViewController () <GADBannerViewDelegate>
@@ -21,7 +24,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     [self.labelContainer setAlpha:0];
-    [self.shareButton setHidden:YES];
+    [self.shareButton setHidden:NO];
+    [self.shareButton setTitle:@"Share on Facebook" forState:UIControlStateNormal];
     
     self.bannerView = [[GADBannerView alloc]
                        initWithAdSize:kGADAdSizeBanner];
@@ -31,6 +35,7 @@
     self.bannerView.adUnitID = @"ca-app-pub-3058866967373393/2894501473";
     self.bannerView.rootViewController = self;
     [self.bannerView loadRequest:[GADRequest request]];
+    [self.bannerView setHidden:true];
     
 
 }
@@ -99,6 +104,17 @@
 
 -(IBAction)shareAction:(id)sender;
 {
+    [self.shareButton setHidden:true];
+    UIImage* share = [SDScreenshotCapture imageWithScreenshot];
+    [self.shareButton setHidden:false];
+
+    FBSDKSharePhoto *photo = [[FBSDKSharePhoto alloc] init];
+    photo.image = share;
+    photo.userGenerated = YES;
+    FBSDKSharePhotoContent *content = [[FBSDKSharePhotoContent alloc] init];
+    content.photos = @[photo];
+    [FBSDKShareDialog showFromViewController:self withContent:content delegate:nil];
+//    [dialog show];
     
 }
 

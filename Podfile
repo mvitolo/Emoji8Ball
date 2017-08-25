@@ -8,5 +8,8 @@ target 'E8Ball' do
     pod 'Firebase/Core'
     pod 'Firebase/AdMob'
     pod 'Google-Mobile-Ads-SDK'
+    pod 'FBSDKShareKit'
+    pod 'FBSDKCoreKit'
+pod 'SDScreenshotCapture'
 end
 

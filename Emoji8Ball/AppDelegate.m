@@ -10,6 +10,7 @@
 @import Firebase;
 #import <Fabric/Fabric.h>
 #import <Crashlytics/Crashlytics.h>
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
 
 @interface AppDelegate ()
 
@@ -24,7 +25,8 @@
     [Fabric with:@[[Crashlytics class]]];
     // Initialize the Google Mobile Ads SDK.
     [GADMobileAds configureWithApplicationID:@"ca-app-pub-3058866967373393~1314838258"];
-    
+    [[FBSDKApplicationDelegate sharedInstance] application:application
+                             didFinishLaunchingWithOptions:launchOptions];
     return YES;
 }
 
@@ -44,6 +46,8 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    [FBSDKAppEvents activateApp];
+
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
